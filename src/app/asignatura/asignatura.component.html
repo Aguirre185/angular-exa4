@@ -1,0 +1,24 @@
+<div class="card">
+    <h5 class="card-header">Featured</h5>
+    <div class="card-body">
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                  <th >sigla</th>
+                  <th >Denominacion</th>
+                  <th >creditos  </th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                    <tr *ngFor="let itemAsignatura of asignaturaLista">
+                        <td>{{itemAsignatura.creditos}}</td>
+                        <td>{{itemAsignatura.denominacion}}</td>
+                        <td>{{itemAsignatura.sigla}}</td>
+
+                    </tr>
+                
+              </tbody>
+          </table>
+    </div>
+  </div>
